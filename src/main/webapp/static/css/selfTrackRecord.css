@@ -1,0 +1,19 @@
+#selfTrackRecord{
+}
+#selfTrackRecord ul li{
+	list-style-type: none;
+	display: inline;
+}
+#selfTrackRecord ul li a{
+	color: gray;
+	text-decoration: none;
+	font-size: 12px;
+}
+#selfTrackRecord ul li a:hover{
+	color: red;
+	text-decoration: none;
+	font-size: 13px;
+}
+.table tr td,.table tr th{
+	text-align: center;
+}
