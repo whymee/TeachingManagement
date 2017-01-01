@@ -5,16 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link type="text/css" href="static/css/teacher_main.css" rel="stylesheet">
-<link href="static/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="${pageContext.request.contextPath}/static/css/teacher_main.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/static/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- bootstrap响应式 -->
 <link href="${pageContext.request.contextPath}/static/bootstrap3/css/bootstrap-responsive.css" rel="stylesheet">
-<script src="static/js/jquery-2.1.4.min.js"></script>
-<script src="static/bootstrap3/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/jquery-2.1.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/bootstrap3/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="stylesheets/simple-calendar.css">
-<script type="text/javascript" src="javascripts/simple-calendar.js"></script>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheets/simple-calendar.css">
+<script type="text/javascript" src="${pageContext.request.contextPath}/javascripts/simple-calendar.js"></script>
 <title>追梦教学过程管理系统</title>
 <script type="text/javascript">
 	function selfMessagePerfect(){
@@ -42,6 +42,11 @@
 		var url = "${pageContext.request.contextPath}/static/teacherJSP/studyDifficultyAdd.jsp";
 	    $("#mainPage").load(url,null,function(){}); 
 	}
+	function studyDifficultyLook(){
+		$("#mainPage").empty();
+		var url = "${pageContext.request.contextPath}/static/teacherJSP/studyDifficultyLook.jsp";
+	    $("#mainPage").load(url,null,function(){}); 
+	}
 	function studyDifficultyHistoryLook(){
 		$("#mainPage").empty();
 		var url = "${pageContext.request.contextPath}/static/teacherJSP/studyDifficultyHistoryLook.jsp";
@@ -54,7 +59,7 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#" id="logo"> 
-					<img alt="" src="static/images/logo.png">
+					<img alt="" src="${pageContext.request.contextPath}/static/images/logo.png">
 				</a>
 			</div>
 			<div style="float: right;margin-top: 20px;">
@@ -67,7 +72,7 @@
 			<div class="col-md-2">
 				<ul id="main-nav" class="nav nav-tabs nav-stacked" style="">
 					<li class="active">
-						<a href="teacher_main.jsp"> 
+						<a href="${pageContext.request.contextPath}/teacher_main.jsp"> 
 							<i class="glyphicon glyphicon-th-large"></i> 
 							首页
 						</a>
@@ -120,11 +125,26 @@
 					<li>
 						<a href="#systemSetting4" class="nav-header collapsed" data-toggle="collapse"> 
 							<i class="glyphicon glyphicon-credit-card"></i> 
-							考试信息管理<span class="pull-right glyphicon glyphicon-chevron-down"></span>
+							考试试题管理<span class="pull-right glyphicon glyphicon-chevron-down"></span>
 						</a>
 						<ul id="systemSetting4" class="nav nav-list collapse secondmenu" style="height: 0px; margin-left: 20px;">
-							<li><a href="#"><i class="glyphicon glyphicon-user"></i>添加考试记录</a></li>
-							<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>历史考试记录查看</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-user"></i>新试题入库</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>查看题库</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>模板组卷</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>自主组卷</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>历史试卷</a></li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="#systemSetting44" class="nav-header collapsed" data-toggle="collapse"> 
+							<i class="glyphicon glyphicon-credit-card"></i> 
+							考试成绩管理<span class="pull-right glyphicon glyphicon-chevron-down"></span>
+						</a>
+						<ul id="systemSetting44" class="nav nav-list collapse secondmenu" style="height: 0px; margin-left: 20px;">
+							<li><a href="#"><i class="glyphicon glyphicon-user"></i>学生成绩录入</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>学生成绩库</a></li>
+							<li><a href="#"><i class="glyphicon glyphicon-th-list"></i>统计与分析</a></li>
 						</ul>
 					</li>
 					
@@ -135,7 +155,8 @@
 						</a>
 						<ul id="systemSetting5" class="nav nav-list collapse secondmenu" style="height: 0px; margin-left: 20px;">
 							<li><a href="javascript:studyDifficultyAdd()"><i class="glyphicon glyphicon-user"></i>添加学困生记录</a></li>
-							<li><a href="javascript:studyDifficultyHistoryLook()"><i class="glyphicon glyphicon-th-list"></i>历史学困生记录查看</a></li>
+							<li><a href="javascript:studyDifficultyLook()"><i class="glyphicon glyphicon-th-list"></i>已添加的学困生</a></li>
+							<li><a href="javascript:studyDifficultyHistoryLook()"><i class="glyphicon glyphicon-th-list"></i>历史学困生记录</a></li>
 						</ul>
 					</li>
 					
@@ -170,13 +191,13 @@
 				</ul>
 			</div>
 			<div class="col-md-10" id="mainPage">
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<div id="user" class="col-md-12" align="center">
 						<br> <img style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; margin-top: 10px;" src="static/images/morenuserPicture.jpg">
 						<table id="userTable">
 							<tr>
-								<td><a href="#"><span class="glyphicon glyphicon-qrcode"></span>&nbsp;个人名片</a></td>
-								<td><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改信息</a></td>
+								<td><a href="javaScript:selfCard()"><span class="glyphicon glyphicon-qrcode"></span>&nbsp;个人名片</a></td>
+								<td><a href="javaScript:selfMessagePerfect()"><span class="glyphicon glyphicon-pencil"></span>&nbsp;修改信息</a></td>
 							</tr>
 							<tr>
 								<td><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;修改密码</a></td>
@@ -187,27 +208,27 @@
 						<h4 style="text-align: left;">&nbsp;&nbsp;快捷通道</h4>
 						<table id="fastPassTable">
 							<tr>
-								<td><a href="#"><button type="button" class="btn btn-success">&nbsp;&nbsp;<span class="glyphicon glyphicon-zoom-in"></span>&nbsp;查看课表&nbsp;&nbsp;</button></a></td>
-								<td><a href="#"><button type="button" class="btn btn-success">&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span>&nbsp;新增作业&nbsp;&nbsp;</button></a></td>
+								<td><button type="button" class="btn btn-success" onclick="javaScript:selfCurriculum()">&nbsp;&nbsp;<span class="glyphicon glyphicon-zoom-in"></span>查看课表</button></td>
+								<td><button type="button" class="btn btn-success">&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span>新增作业</button></td>
 							</tr>
 							<tr>
-								<td><a href="#"><button type="button" class="btn btn-success">&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span>&nbsp;新增备课&nbsp;&nbsp;</button></a></td>
-								<td><a href="#"><button type="button" class="btn btn-success">&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span>&nbsp;新增考试&nbsp;&nbsp;</button></a></td>
+								<td><button type="button" class="btn btn-success">&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span>新增备课</button></td>
+								<td><button type="button" class="btn btn-success">&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span>成绩录入</button></td>
 							</tr>
 						</table>
 						<br>
 					</div>
 				</div>
-				<div class="col-md-9">
+				<div class="col-md-8">
 					<div id='container'></div>
 					<script>
 					    var myCalendar = new SimpleCalendar('#container');
 					 </script>
 				</div>
-				<div class="col-md-12" style="margin-top: 10px;">
+				<div class="col-md-12" style="margin-top: 10px;margin-left: -18px;">
 					<div class="col-md-6 table-responsive">
-					<br>
-					<h4 style="color: #4A515B;">学校公告</h4>
+						<br>
+						<h4 style="color: #4A515B;">学校公告</h4>
 						<table class="table table-hover gonggaoTable">
 							<tr>
 								<th>公告摘要</th>

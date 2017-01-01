@@ -30,7 +30,7 @@
 			<a href="${pageContext.request.contextPath}/teacher_main.jsp">首页</a>&nbsp;>&nbsp;学困生信息添加
 		</h4>
 	</div>
-	<div id="selfDefficulty" style="width: 60%;">
+	<div id="selfDefficulty" style="width: 70%;">
 		<form class="form-horizontal" role="form">
 			<div class="form-group">
 				<label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
@@ -94,56 +94,11 @@
 			<div class="form-group">
 				<div class="col-sm-offset-9 col-sm-3">
 					<button type="reset" class="btn btn-default">重置</button>
-					<button type="button" class="btn btn-success" style="width: 150px;">确认添加</button>
+					<button type="button" class="btn btn-success">确认添加</button>
 				</div>
 			</div>
 		</form>
 	</div>
-	<hr>
-	<div>
-		<table class="table table-bordered table-striped">
-			<caption style="font-weight: 800;color: gray;">已添加的学困生</caption>
-			<tr>
-				<th>学号</th>
-				<th>姓名</th>
-				<th>性别</th>
-				<th>年龄</th>
-				<th>班级</th>
-				<th>学困科目</th>
-				<th>学困原因</th>
-				<th>操作</th>
-			</tr>
-			<tr>
-				<td>20134424587</td>
-				<td>陈钟鹏</td>
-				<td>男</td>
-				<td>22</td>
-				<td>高2015级 8班</td>
-				<td>数学</td>
-				<td>实在是不认识123456789</td>
-				<td><button type="reset" class="btn btn-default">修改</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset" class="btn btn-danger">删除</button></td>
-			</tr>
-			<tr>
-				<td>20134424587</td>
-				<td>陈钟鹏</td>
-				<td>男</td>
-				<td>22</td>
-				<td>高2015级 8班</td>
-				<td>数学</td>
-				<td>实在是不认识123456789</td>
-				<td><button type="reset" class="btn btn-default">修改</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset" class="btn btn-danger">删除</button></td>
-			</tr>
-			<tr>
-				<td>20134424587</td>
-				<td>陈钟鹏</td>
-				<td>男</td>
-				<td>22</td>
-				<td>高2015级 8班</td>
-				<td>数学</td>
-				<td>实在是不认识123456789</td>
-				<td><button type="reset" class="btn btn-default">修改</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset" class="btn btn-danger">删除</button></td>
-			</tr>
-		</table>
-	</div>
+	
 </body>
 </html>

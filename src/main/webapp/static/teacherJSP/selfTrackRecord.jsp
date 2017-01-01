@@ -14,7 +14,7 @@
 <script src="${pageContext.request.contextPath}/static/js/jquery-2.1.4.min.js"></script>
 <script src="${pageContext.request.contextPath}/static/bootstrap3/js/bootstrap.min.js"></script>
 
-<title>教师个人名片</title>
+<title>教师个人业绩档案</title>
 
 </head>
 <body>
@@ -156,7 +156,7 @@
 	
 	<div class="modal" id="vouchersLook" tabindex="-1" role="dialog"
 		aria-labelledby="exampleModalLabel" style="">
-		<div class="modal-dialog modal-lg" role="document" style="width: 100%;height: 100%;">
+		<div class="modal-dialog modal-lg" role="document" style="width: 80%;height: 80%;">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"
@@ -165,7 +165,7 @@
 					</button>
 				</div>
 				<div class="modal-body" style="text-align: center;">
-					<img src="${pageContext.request.contextPath}/static/images/vouchers.png" alt="..." class="img-rounded">
+					<img src="${pageContext.request.contextPath}/static/images/vouchers.png" alt="..." class="img-rounded" width="80%" height="80%">
 				</div>
 			</div>
 		</div>

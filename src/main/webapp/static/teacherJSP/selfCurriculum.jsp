@@ -22,7 +22,7 @@
 	</div>
 	<div id="selfCurriculum">
 		<table class=" table table-bordered" style="text-align: center;">
-			<tr>
+			<tr class="warning"> 
 				<th></th>
 				<th>星期一</th>
 				<th>星期二</th>
@@ -32,7 +32,17 @@
 				<th>星期六</th>
 				<th>星期日</th>
 			</tr>
-			<tr>
+			<tr class="danger">
+				<td>早自习</td>
+				<td></td>
+				<td>数学<br>高2013级&nbsp;12班</td>
+				<td></td>
+				<td>数学<br>高2013级&nbsp;12班</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="info">
 				<td>第一节</td>
 				<td></td>
 				<td></td>
@@ -42,7 +52,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="danger">
 				<td>第二节</td>
 				<td>数学<br>高2013级&nbsp;12班</td>
 				<td>数学<br>高2013级&nbsp;12班</td>
@@ -52,7 +62,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="info">
 				<td>第三节</td>
 				<td>数学<br>高2013级&nbsp;12班</td>
 				<td></td>
@@ -62,7 +72,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="warning">
 				<td>第四节</td>
 				<td>数学<br>高2013级&nbsp;12班</td>
 				<td>数学<br>高2013级&nbsp;12班</td>
@@ -72,7 +82,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="danger">
 				<td>第五节</td>
 				<td></td>
 				<td>数学<br>高2013级&nbsp;12班</td>
@@ -82,7 +92,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="success">
 				<td>第六节</td>
 				<td>数学<br>高2013级&nbsp;12班</td>
 				<td></td>
@@ -92,7 +102,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="warning">
 				<td>第七节</td>
 				<td></td>
 				<td>数学<br>高2013级&nbsp;12班</td>
@@ -102,7 +112,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="info">
 				<td>第八节</td>
 				<td></td>
 				<td>数学<br>高2013级&nbsp;12班</td>
@@ -112,7 +122,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="success">
 				<td>第九节</td>
 				<td>数学<br>高2013级&nbsp;12班</td>
 				<td>数学<br>高2013级&nbsp;12班</td>
@@ -122,7 +132,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="danger">
 				<td>第十节</td>
 				<td></td>
 				<td>数学<br>高2013级&nbsp;12班</td>
@@ -132,7 +142,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
+			<tr class="active">
 				<td>第十一节</td>
 				<td></td>
 				<td></td>
@@ -142,16 +152,7 @@
 				<td></td>
 				<td></td>
 			</tr>
-			<tr>
-				<td>第十二节</td>
-				<td></td>
-				<td>数学<br>高2013级&nbsp;12班</td>
-				<td></td>
-				<td>数学<br>高2013级&nbsp;12班</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
+			
 			
 		</table>
 	</div>

@@ -21,21 +21,21 @@
 		<h4><a href="${pageContext.request.contextPath}/teacher_main.jsp">首页</a>&nbsp;>&nbsp;教师个人名片</h4>
 	</div>
 	<div id="selfCard">
-		<div class="col-md-4">
-			<img alt="" src="${pageContext.request.contextPath}/static/images/pengmao.jpg" width="350px" height="400px" style="margin-left: 30px;margin-top: 20px;">
+		<div class="col-md-3">
+			<img alt="" src="${pageContext.request.contextPath}/static/images/pengmao.jpg" width="250px" height="300px" style="margin-top: 20px;">
 			<br>
 			<br>
-			<span style="margin-left: 30px;font-weight: 800;font-size: 20px;">职业：教师</span>
+			<span style="font-weight: 800;font-size: 14px;">职业：教师</span>
 			<br>
 			<br>
-			<span style="margin-left: 30px;font-weight: 800;font-size: 20px;">学校：重庆科技学院</span>
+			<span style="font-weight: 800;font-size: 14px;">学校：重庆科技学院</span>
 			<br>
 			<br>
-			<span style="margin-left: 30px;font-weight: 800;font-size: 20px;">学校地址：重庆市沙坪坝区虎溪大学城</span>
+			<span style="font-weight: 800;font-size: 14px;">学校地址：重庆市沙坪坝区虎溪大学城</span>
 		</div>
 		<div class="col-md-1"></div>
-		<div class="col-md-7" style="margin-top: 20px;">
-			<table class="table" style="font-weight: 400;font-size: 20px;">
+		<div class="col-md-8" style="margin-top: 20px;">
+			<table class="table" style="font-weight: 400;font-size: 14px;">
 				<tr>
 					<td>姓名：</td>
 					<td>陈钟鹏</td>
@@ -66,7 +66,7 @@
 				</tr>
 			</table>
 			
-			<br><br><br>
+			<br>
 			<h1>一切为了孩子，为了孩子的一切，为了一切的孩子！</h1>
 		</div>
 	</div>
